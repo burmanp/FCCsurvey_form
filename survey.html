@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Initial job enquiry</title>
+  <link rel="stylesheet" type="text/css" href="styleSurvey.css">
+</head>
+<body>
+  <h1 id="title">Initial Job Enquiry</h1>
+  <p id="description">Please take a moment to fill out the form below.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name" >Name</label>
+    <input type="text" name="name" placeholder="Full Name" id="name" required="true"><br>
+    
+    <label id="email-label" for="email" >Email</label>
+    <input type="email" name="email" placeholder="email:" id="email" required="true"><br>
+
+    <label id="number-label" for="number" >Year(s) in industry</label>
+    <input type="number" name="number" placeholder="2" id="number" min="1" max="65"><br>
+    
+    <label id="dropdown-label" for="dropdown" >Current employment Status</label>
+    <select id="dropdown" name="status" required>
+        <option disabled selected value>Please pick one</option>
+        <option value="fulltime">Full-time</option>
+        <option value="parttime">Part-time</option>
+        <option value="selfemp">Self-employed</option>
+        <option value="preferNo">Prefer not to say</option>
+        
+    </select><br>
+        
+    <p>Your experience level</p>
+    
+    <input type="radio" name="xp" value="expert">Expert <br>
+    <input type="radio" name="xp" value="midLevel">Mid Level <br>
+    <input type="radio" name="xp" value="newbie">Newbie <br>
+    
+    <p>What area of expertise are you interested in?<span class="clue">(Check all that apply)</span></p>
+
+      <input type="checkbox" name="service" value="dev">Dev
+      <input type="checkbox" name="service" value="support">Support
+      <input type="checkbox" name="service" value="sales">Sales<br>
+
+    <p>Please provide a cover letter here.</p>
+      <textarea id="comments" class="input-textarea" name="comment" rows="3" cols="40" placeholder="Describe your experiences and why you want to work with us..."></textarea><br>
+
+    <input id="submit" type="submit" name="submit"><br>
+
+  </form>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
